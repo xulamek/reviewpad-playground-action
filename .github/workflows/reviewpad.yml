@@ -1,0 +1,11 @@
+name: Reviewpad
+
+on:
+  pull_request:
+
+jobs:
+  reviewpad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run reviewpad action
+        uses: reviewpad/action@dev-remote-auth-test
